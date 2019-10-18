@@ -3,7 +3,7 @@ require "yaml"
 def load_library(path)
   emojis = YAML.load_file(path)
   sorted_list = emojis.reduce({}) do
-    |memo, (defininition, emoticons)|
+    |memo, (definition, emoticons)|
     if !memo[:get_meaning]
       memo[:get_meaning] = {}
     end
@@ -12,7 +12,7 @@ def load_library(path)
     end
     emoticons.each do
       |emoji|
-      memo[:get_meaning][emoji] = defininition.to_s
+      memo[:get_meaning][emoji] = definition.to_s
       
       if !memo[:get_emoticon][definition.to_s]
         memo[:get_emoticon][definition.to_s] = []
