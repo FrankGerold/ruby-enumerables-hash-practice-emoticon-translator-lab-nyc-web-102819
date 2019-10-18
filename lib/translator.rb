@@ -3,7 +3,7 @@ require "yaml"
 def load_library(path)
   emojis = YAML.load_file(path)
   sorted_list = emojis.reduce({}) do
-    |memo, ()
+    |memo, (defininition, emoticons)
   end 
 end
 
