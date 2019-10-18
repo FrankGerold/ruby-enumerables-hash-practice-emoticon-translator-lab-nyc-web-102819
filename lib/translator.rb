@@ -16,7 +16,7 @@ def load_library(path)
       memo[:get_meaning][emoji] = defininition.to_s
       
       if !memo[get_emoticon][definition.to_s]
-        memo[get_emoticon][definition.to_s] << emoji
+        memo[get_emoticon][definition.to_s] = []
       end
     end
     memo
