@@ -10,6 +10,7 @@ def load_library(path)
     if !memo[:get_emoticon]
       memo[:get_emoticon] = {}
     end
+    memo
   end 
   sorted_list
 end
