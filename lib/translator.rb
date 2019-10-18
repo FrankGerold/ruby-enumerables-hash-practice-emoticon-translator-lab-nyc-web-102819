@@ -24,6 +24,7 @@ def load_library(path)
 end
 
 def get_japanese_emoticon (path, emoji)
+  emoji_list = load_library(path)
   
 end
 
