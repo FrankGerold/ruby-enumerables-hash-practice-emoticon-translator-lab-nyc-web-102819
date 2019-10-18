@@ -3,8 +3,15 @@ require "yaml"
 def load_library(path)
   emojis = YAML.load_file(path)
   sorted_list = emojis.reduce({}) do
-    |memo, (defininition, emoticons)
+    |memo, (defininition, emoticons)|
+    if !memo[:get_meaning]
+      memo[:get_meaning] = {}
+    end
+    if !memo[:get_emoticon]
+      memo[:get_emoticon] = {}
+    end
   end 
+  sorted_list
 end
 
 def get_japanese_emoticon
