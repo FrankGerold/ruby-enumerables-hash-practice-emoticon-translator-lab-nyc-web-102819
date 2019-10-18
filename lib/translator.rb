@@ -1,7 +1,10 @@
 require "yaml"
 
 def load_library(path)
-YAML.load_file(path)
+  list = YAML.load_file(path)
+  sorted_list = list.reduce({}) do
+    |
+  end 
 end
 
 def get_japanese_emoticon
