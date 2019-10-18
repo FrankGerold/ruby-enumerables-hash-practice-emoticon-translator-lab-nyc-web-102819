@@ -17,8 +17,7 @@ def load_library(path)
     if !memo[:get_emoticon][emoticons[0]]
         memo[:get_emoticon][emoticons[0]] = []
     end
-    memo[:get_emoticon][emoticons[0]] = emoticons[2]
-    end
+    memo[:get_emoticon][emoticons[0]] = emoticons[1]
     memo
   end 
   sorted_list
