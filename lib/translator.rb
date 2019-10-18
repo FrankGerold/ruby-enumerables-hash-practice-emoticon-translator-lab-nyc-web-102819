@@ -1,9 +1,9 @@
 require "yaml"
 
 def load_library(path)
-  list = YAML.load_file(path)
-  sorted_list = list.reduce({}) do
-    |
+  emojis = YAML.load_file(path)
+  sorted_list = emojis.reduce({}) do
+    |memo, ()
   end 
 end
 
