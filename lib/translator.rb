@@ -17,7 +17,7 @@ def load_library(path)
     if !memo[:get_emoticon][emoticons[0]]
         memo[:get_emoticon][emoticons[0]] = []
     end
-    memo[:get_emoticon][emoticons[0]] << emoji
+    memo[:get_emoticon][emoticons[0]] = emoticons[2]
     end
     memo
   end 
