@@ -26,6 +26,9 @@ end
 def get_japanese_emoticon (path, emoji)
   emoji_list = load_library(path)
   equivalent_emoji = emoji_list[:get_emoticon][emoji]
+  if !equivalent_emoji
+    equivalent_emoji = "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
