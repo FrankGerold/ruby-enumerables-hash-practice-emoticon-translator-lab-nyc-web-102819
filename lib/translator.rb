@@ -13,11 +13,11 @@ def load_library(path)
     emoticons.each do
       |emoji|
       memo[:get_meaning][emoji] = definition.to_s
-      
-      if !memo[:get_emoticon][definition.to_s]
-        memo[:get_emoticon][definition.to_s] = []
-      end
-      memo[:get_emoticon][definition.to_s] << emoji
+    end
+    if !memo[:get_emoticon][emoticons[0]]
+        memo[:get_emoticon][emoticons[0]] = []
+    end
+    memo[:get_emoticon][emoticons[0]] << emoji
     end
     memo
   end 
