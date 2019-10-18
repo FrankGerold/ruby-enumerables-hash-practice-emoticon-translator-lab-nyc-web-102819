@@ -7,6 +7,9 @@ def load_library(path)
     if !memo[:get_meaning]
       memo[:get_meaning] = {}
     end
+    emoticons.each do
+      |emoji|
+      memo[:get_meaning][emoji] = defininition
     if !memo[:get_emoticon]
       memo[:get_emoticon] = {}
     end
