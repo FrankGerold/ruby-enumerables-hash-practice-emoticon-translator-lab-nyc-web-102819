@@ -18,6 +18,7 @@ def load_library(path)
       if !memo[get_emoticon][definition.to_s]
         memo[get_emoticon][definition.to_s] = []
       end
+      memo[get_emoticon][definition.to_s] << emoji
     end
     memo
   end 
