@@ -23,7 +23,7 @@ def load_library(path)
   sorted_list
 end
 
-def get_japanese_emoticon (path, emoji)
+def get_japanese_emoticon(path, emoji) 
   emoji_list = load_library(path)
   equivalent_emoji = emoji_list[:get_emoticon][emoji]
   if !equivalent_emoji
